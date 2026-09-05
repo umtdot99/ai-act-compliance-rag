@@ -1,0 +1,563 @@
+[
+  {
+    "Question_ID": "A1",
+    "Question_Text": "What must the logs of a high-risk AI system record at a minimum?",
+    "Chunk_ID": [
+      [
+        "12(3)",
+        0.8152405619621277
+      ],
+      [
+        "12(1)",
+        0.8029670119285583
+      ],
+      [
+        "12(2)",
+        0.7904113531112671
+      ],
+      [
+        "13(3)",
+        0.7554811239242554
+      ],
+      [
+        "15(5)",
+        0.7495990991592407
+      ],
+      [
+        "15(4)",
+        0.7452927231788635
+      ],
+      [
+        "11(1)",
+        0.7444194555282593
+      ],
+      [
+        "14(4)",
+        0.7397841215133667
+      ],
+      [
+        "9(8)",
+        0.7381961345672607
+      ],
+      [
+        "9(1)",
+        0.7334716320037842
+      ]
+    ],
+    "Answer_Text": "**Direct answer:** The supplied excerpts lay down an explicit minimum log content list only for high-risk AI systems referred to in point 1(a) of Annex III; for high-risk AI systems generally, the text sets a capability requirement (automatic recording of events over the system's lifetime) rather than an itemised minimum list — Article 12(1), Article 12(3).\n\n**General logging obligations (all high-risk AI systems)**\n\n- High-risk AI systems shall technically allow for the automatic recording of events (logs) over the lifetime of the system — Article 12(1).\n- Logging capabilities shall ensure a level of traceability appropriate to the intended purpose, and shall enable recording of events relevant for: identifying situations that may result in the system presenting a risk within the meaning of Article 79(1) or in a substantial modification; facilitating the post-market monitoring referred to in Article 72; and monitoring the operation of high-risk AI systems referred to in Article 26(5) — Article 12(2).\n- Articles 79(1), 72 and 26(5) are cited by the excerpt but their content is outside the text indexed here, so I cannot set out what they require — Article 12(2).\n\n**Express minimum, for systems referred to in point 1(a) of Annex III**\n\nFor those systems the logging capabilities shall provide, at a minimum — Article 12(3):\n\n- recording of the period of each use of the system (start date and time and end date and time of each use) — Article 12(3)(a);\n- the reference database against which input data has been checked by the system — Article 12(3)(b);\n- the input data for which the search has led to a match — Article 12(3)(c);\n- the identification of the natural persons involved in the verification of the results, as referred to in Article 14(5) — Article 12(3)(d).\n\nI have not been given Annex III, so I cannot describe which systems fall under its point 1(a) — Article 12(3).\n\n**Related documentation obligation**\n\n- Where relevant, the instructions for use shall describe the mechanisms included within the high-risk AI system that allow deployers to properly collect, store and interpret the logs in accordance with Article 12 — Article 13(3)(f).\n\n**Not established by the supplied text**\n\n- These excerpts do not lay down a log retention period, storage format, or any numeric threshold for logging; I will not supply a figure that the text does not contain.\n\n**Human decision:** Whether a given system falls under point 1(a) of Annex III — and therefore whether the Article 12(3) minimum list applies on top of the general Article 12(1)–(2) capability requirement — depends on the intended purpose and Annex III classification, facts I have not been given. The provider bears the obligation; verification of the technical documentation demonstrating compliance sits with national competent authorities and notified bodies — Article 11(1).",
+    "Input_Tokens": 4611,
+    "Output_Tokens": 1278,
+    "Stop_Reason": "end_turn",
+    "Time": 15.793174028396606
+  },
+  {
+    "Question_ID": "A2",
+    "Question_Text": "How must bias in data sets be addressed?",
+    "Chunk_ID": [
+      [
+        "10(2)",
+        0.7396136522293091
+      ],
+      [
+        "10(3)",
+        0.7298822402954102
+      ],
+      [
+        "10(5)",
+        0.7212911248207092
+      ],
+      [
+        "10(4)",
+        0.68145352602005
+      ],
+      [
+        "10(1)",
+        0.6315257549285889
+      ],
+      [
+        "15(2)",
+        0.6064156293869019
+      ],
+      [
+        "9(8)",
+        0.6020573973655701
+      ],
+      [
+        "10(6)",
+        0.6017332077026367
+      ],
+      [
+        "14(4)",
+        0.6010007858276367
+      ],
+      [
+        "9(5)",
+        0.600972056388855
+      ]
+    ],
+    "Answer_Text": "**Direct answer:** Bias must be addressed through the data governance and management practices that apply to training, validation and testing data sets: providers must examine the data sets for possible biases and apply appropriate measures to detect, prevent and mitigate any biases identified (Article 10(2)(f) and (g)).\n\n**What the indexed text establishes**\n\n- Training, validation and testing data sets are subject to data governance and management practices appropriate for the intended purpose of the high-risk AI system, and those practices concern in particular the matters listed in points (a) to (h) (Article 10(2)).\n- The practices must include examination in view of possible biases that are likely to affect the health and safety of persons, have a negative impact on fundamental rights, or lead to discrimination prohibited under Union law, especially where data outputs influence inputs for future operations (Article 10(2)(f)).\n- They must include appropriate measures to detect, prevent and mitigate possible biases identified according to point (f) (Article 10(2)(g)).\n- They must also include identification of relevant data gaps or shortcomings that prevent compliance with this Regulation, and how those gaps and shortcomings can be addressed (Article 10(2)(h)).\n- The data sets themselves shall be relevant, sufficiently representative, and to the best extent possible free of errors and complete in view of the intended purpose, and shall have the appropriate statistical properties, including, where applicable, as regards the persons or groups of persons in relation to whom the system is intended to be used; these characteristics may be met at the level of individual data sets or a combination thereof (Article 10(3)).\n- Data sets shall take into account, to the extent required by the intended purpose, the characteristics or elements particular to the specific geographical, contextual, behavioural or functional setting in which the system is intended to be used (Article 10(4)).\n\n**Processing special categories of personal data for bias work**\n\n- To the extent strictly necessary for bias detection and correction under Article 10(2)(f) and (g), providers may exceptionally process special categories of personal data, subject to appropriate safeguards for fundamental rights and freedoms (Article 10(5)).\n- All of the following conditions must be met: the objective cannot be effectively fulfilled by processing other data, including synthetic or anonymised data (Article 10(5)(a)); technical limitations on re-use plus state-of-the-art security and privacy-preserving measures, including pseudonymisation (Article 10(5)(b)); measures ensuring the data are secured and protected, including strict controls and documentation of access, with access limited to authorised persons under confidentiality obligations (Article 10(5)(c)); the data are not transmitted, transferred or otherwise accessed by other parties (Article 10(5)(d)); the data are deleted once the bias has been corrected or the retention period ends, whichever comes first (Article 10(5)(e)); and the records of processing activities include the reasons why the processing was strictly necessary and why the objective could not be achieved with other data (Article 10(5)(f)).\n- Article 10(5) states that these conditions apply in addition to the provisions of Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680; those instruments are outside the text indexed here, so I cannot set out what they require.\n\n**Which systems this applies to**\n\n- Article 10(2) to (5) apply to high-risk AI systems that make use of techniques involving the training of AI models with data, whenever such data sets are used (Article 10(1)).\n- For high-risk AI systems not using techniques involving the training of AI models, paragraphs 2 to 5 apply only to the testing data sets (Article 10(6)).\n\n**Human decision:** What counts as \"appropriate\" governance practices, which biases are \"likely\" to have the effects listed, and which mitigation measures are adequate all depend on the intended purpose and the deployment setting of the specific system (Article 10(2), Article 10(4)). Those determinations are for the provider, and their verification sits with the notified body or the national competent authority. Questions about the data protection instruments referenced in Article 10(5) should go to qualified legal counsel.",
+    "Input_Tokens": 4443,
+    "Output_Tokens": 1510,
+    "Stop_Reason": "end_turn",
+    "Time": 17.280864000320435
+  },
+  {
+    "Question_ID": "A3",
+    "Question_Text": "When must the technical documentation be drawn up, and where is its minimum content defined?",
+    "Chunk_ID": [
+      [
+        "11(1)",
+        0.7794284820556641
+      ],
+      [
+        "11(2)",
+        0.7263749837875366
+      ],
+      [
+        "12(3)",
+        0.7075197696685791
+      ],
+      [
+        "11(3)",
+        0.6906000971794128
+      ],
+      [
+        "10(2)",
+        0.661324143409729
+      ],
+      [
+        "15(2)",
+        0.6570112109184265
+      ],
+      [
+        "13(2)",
+        0.6526695489883423
+      ],
+      [
+        "8(2)",
+        0.6425676941871643
+      ],
+      [
+        "14(5)",
+        0.6425459384918213
+      ],
+      [
+        "13(3)",
+        0.6396097540855408
+      ]
+    ],
+    "Answer_Text": "**Direct answer:** The technical documentation must be drawn up before the high-risk AI system is placed on the market or put into service, and kept up to date; its minimum content is defined in Annex IV (Article 11(1)).\n\n- The technical documentation shall be drawn up before the high-risk AI system is placed on the market or put into service and shall be kept up to date — Article 11(1).\n- It shall be drawn up so as to demonstrate that the system complies with the requirements set out in this Section, and to provide national competent authorities and notified bodies with the necessary information in a clear and comprehensive form to assess that compliance — Article 11(1).\n- It shall contain, at a minimum, the elements set out in Annex IV — Article 11(1). Annex IV is not part of the indexed text, so I cannot set out or summarise those elements.\n- SMEs, including start-ups, may provide the Annex IV elements in a simplified manner, using the simplified form the Commission shall establish for the needs of small and micro enterprises; where an SME opts for this, it shall use that form, and notified bodies shall accept it for the purposes of the conformity assessment — Article 11(1).\n- Where the high-risk AI system relates to a product covered by the Union harmonisation legislation listed in Section A of Annex I, a single set of technical documentation shall be drawn up containing the information in Article 11(1) as well as the information required under those legal acts — Article 11(2).\n- The content of Annex IV may be amended by Commission delegated acts adopted in accordance with Article 97, where necessary in light of technical progress — Article 11(3).\n\n**Human decision:** Whether a given system falls under Article 11(2) (product covered by Section A of Annex I), and whether the provider qualifies as an SME or start-up for the simplified form, are facts the provider must establish; assessment of the documentation itself sits with the notified body or the national competent authority (Article 11(1)).",
+    "Input_Tokens": 4612,
+    "Output_Tokens": 694,
+    "Stop_Reason": "end_turn",
+    "Time": 8.591040134429932
+  },
+  {
+    "Question_ID": "A4",
+    "Question_Text": "What intervention powers must the person assigned to human oversight have over the system?",
+    "Chunk_ID": [
+      [
+        "14(2)",
+        0.7718133926391602
+      ],
+      [
+        "14(3)",
+        0.732654333114624
+      ],
+      [
+        "14(4)",
+        0.7190900444984436
+      ],
+      [
+        "14(5)",
+        0.6628897190093994
+      ],
+      [
+        "14(1)",
+        0.6601570844650269
+      ],
+      [
+        "13(3)",
+        0.6386311054229736
+      ],
+      [
+        "8(2)",
+        0.6287020444869995
+      ],
+      [
+        "9(9)",
+        0.627763032913208
+      ],
+      [
+        "9(1)",
+        0.6193943023681641
+      ],
+      [
+        "11(3)",
+        0.6179311871528625
+      ]
+    ],
+    "Answer_Text": "**Direct answer:** The indexed text requires that the natural persons assigned to human oversight be enabled — as appropriate and proportionate — to decline to use the system or to disregard, override or reverse its output, and to intervene in or halt its operation via a 'stop' button or similar procedure bringing the system to a safe state (Article 14(4)(d), Article 14(4)(e)).\n\n**The intervention-related obligations in the text:**\n\n- The system shall be designed and developed, including with appropriate human-machine interface tools, so that it can be effectively overseen by natural persons during the period in which it is in use (Article 14(1)).\n- The system shall be provided to the deployer in such a way that the persons assigned oversight are enabled, as appropriate and proportionate, to decide in any particular situation not to use the system or to otherwise disregard, override or reverse its output (Article 14(4)(d)).\n- Those persons must likewise be enabled to intervene in the operation of the system or interrupt it through a 'stop' button or a similar procedure allowing the system to come to a halt in a safe state (Article 14(4)(e)).\n- Supporting capabilities that condition meaningful intervention are also required: properly understanding the system's capacities and limitations and duly monitoring its operation, including detecting and addressing anomalies, dysfunctions and unexpected performance (Article 14(4)(a)); remaining aware of the possible tendency to automatically rely or over-rely on the output (automation bias) (Article 14(4)(b)); and correctly interpreting the output, taking into account the interpretation tools and methods available (Article 14(4)(c)).\n- The oversight measures shall be commensurate with the risks, level of autonomy and context of use, and are ensured through measures built into the system by the provider before placing on the market or putting into service, where technically feasible, and/or measures identified by the provider that are appropriate to be implemented by the deployer (Article 14(3)).\n- Human oversight shall aim to prevent or minimise risks to health, safety or fundamental rights arising in use in accordance with the intended purpose or under conditions of reasonably foreseeable misuse (Article 14(2)).\n- For high-risk AI systems referred to in point 1(a) of Annex III, the measures must in addition ensure that no action or decision is taken by the deployer on the basis of the identification resulting from the system unless that identification has been separately verified and confirmed by at least two natural persons with the necessary competence, training and authority; that two-person requirement does not apply to systems used for law enforcement, migration, border control or asylum where Union or national law considers it disproportionate (Article 14(5)). I have not been given the content of Annex III and cannot describe which systems point 1(a) covers.\n- The human oversight measures referred to in Article 14, including the technical measures put in place to facilitate interpretation of the outputs by deployers, must be set out in the instructions for use (Article 13(3)(d)).\n\n**Human decision:** The text qualifies these enablements with \"as appropriate and proportionate\" (Article 14(4)) and requires measures \"commensurate with the risks, level of autonomy and context of use\" (Article 14(3)) — so what a stop procedure or override capability must concretely look like depends on facts I do not have: the intended purpose, the level of autonomy, the deployment context, and whether the system falls under point 1(a) of Annex III. The provider bears the obligation to identify and build or specify these measures before placing on the market or putting into service (Article 14(3)); verification of the outcome sits with the notified body or national competent authority, not with me.",
+    "Input_Tokens": 4319,
+    "Output_Tokens": 1393,
+    "Stop_Reason": "end_turn",
+    "Time": 17.207684993743896
+  },
+  {
+    "Question_ID": "B1",
+    "Question_Text": "Where is a system's level of accuracy determined, where is it declared, and where can an auditor verify it?",
+    "Chunk_ID": [
+      [
+        "15(3)",
+        0.7225137948989868
+      ],
+      [
+        "13(3)",
+        0.6440823078155518
+      ],
+      [
+        "15(2)",
+        0.6428461670875549
+      ],
+      [
+        "10(3)",
+        0.6407647728919983
+      ],
+      [
+        "11(1)",
+        0.6396185159683228
+      ],
+      [
+        "12(3)",
+        0.6390458345413208
+      ],
+      [
+        "10(2)",
+        0.6273297071456909
+      ],
+      [
+        "14(5)",
+        0.6263157725334167
+      ],
+      [
+        "12(2)",
+        0.623403012752533
+      ],
+      [
+        "15(1)",
+        0.6206534504890442
+      ]
+    ],
+    "Answer_Text": "**Direct answer:** The appropriate level of accuracy is set at the design and development stage (Article 15(1)); it is declared in the instructions for use accompanying the system (Article 15(3)); and it is made verifiable through the technical documentation, which exists to give national competent authorities and notified bodies the information needed to assess compliance with this Section (Article 11(1)).\n\n**1. Where it is determined**\n\n- High-risk AI systems shall be designed and developed so as to achieve an appropriate level of accuracy, robustness and cybersecurity, and to perform consistently in those respects throughout their lifecycle — Article 15(1).\n- The system's level of accuracy is something against which the system has been **tested and validated**, and which can be expected in use — Article 13(3)(b)(ii).\n- On the technical question of *how* to measure appropriate levels of accuracy and robustness, the Commission shall, in cooperation with relevant stakeholders and organisations such as metrology and benchmarking authorities, encourage as appropriate the development of benchmarks and measurement methodologies — Article 15(2). The text does not itself lay down the metrics or any target value.\n\n**2. Where it is declared**\n\n- The levels of accuracy and the relevant accuracy metrics shall be declared in the accompanying instructions of use — Article 15(3).\n- Correspondingly, the instructions for use shall contain at least the level of accuracy, including its metrics, robustness and cybersecurity referred to in Article 15 against which the system has been tested and validated and which can be expected, together with any known and foreseeable circumstances that may have an impact on that expected level — Article 13(3)(b)(ii).\n- Where appropriate, the instructions must also state the system's performance regarding specific persons or groups of persons on which it is intended to be used — Article 13(3)(b)(v).\n\n**3. Where it can be verified**\n\n- The technical documentation shall be drawn up before the system is placed on the market or put into service, kept up to date, and drawn up so as to demonstrate that the system complies with the requirements set out in this Section — Article 11(1).\n- It shall provide national competent authorities and notified bodies with the necessary information in a clear and comprehensive form to assess compliance with those requirements, and shall contain at a minimum the elements set out in Annex IV — Article 11(1). Annex IV is outside the text supplied to me, so I cannot list what it requires.\n- SMEs, including start-ups, may provide the Annex IV elements in a simplified manner using a form to be established by the Commission, and notified bodies shall accept that form for the purposes of the conformity assessment — Article 11(1).\n- Where the accuracy question concerns data quality, the underlying data governance record is also framed by Article 10(2) (design choices, data-preparation operations, assumptions, bias examination and mitigation) and Article 10(3) (data sets relevant, sufficiently representative, to the best extent possible free of errors and complete, with appropriate statistical properties in view of the intended purpose).\n\n**Two boundaries worth flagging.** The excerpts do not use the term \"auditor\"; the actors named as assessing compliance are national competent authorities and notified bodies — Article 11(1). And the text nowhere fixes a numeric accuracy threshold: \"appropriate\" in Article 15(1) is relative to the system, and the declared figure in Article 15(3) is the provider's own tested and validated value.\n\n**Human decision:** what level counts as \"appropriate\", which metrics are the \"relevant\" ones, and whether the documentation actually demonstrates compliance are determinations for the provider in the first instance and for the notified body or national competent authority on verification — they turn on the intended purpose and the Annex III category, which I have not been given.",
+    "Input_Tokens": 4535,
+    "Output_Tokens": 1498,
+    "Stop_Reason": "end_turn",
+    "Time": 17.478893995285034
+  },
+  {
+    "Question_ID": "B2",
+    "Question_Text": "Through which obligations is oversight of a system ensured throughout its lifecycle?",
+    "Chunk_ID": [
+      [
+        "14(3)",
+        0.7638044357299805
+      ],
+      [
+        "14(2)",
+        0.7588207721710205
+      ],
+      [
+        "9(2)",
+        0.7028202414512634
+      ],
+      [
+        "14(4)",
+        0.6979536414146423
+      ],
+      [
+        "9(1)",
+        0.6957427263259888
+      ],
+      [
+        "8(2)",
+        0.6885092258453369
+      ],
+      [
+        "12(3)",
+        0.6808721423149109
+      ],
+      [
+        "8(1)",
+        0.6803672313690186
+      ],
+      [
+        "13(1)",
+        0.6667290925979614
+      ],
+      [
+        "9(10)",
+        0.662767767906189
+      ]
+    ],
+    "Answer_Text": "**Direct answer.** In the supplied excerpts, ongoing oversight rests on two distinct mechanisms: the **risk management system**, which is expressly a continuous process run across the entire lifecycle (Article 9(2)), and **human oversight measures**, which the provider must identify — and where technically feasible build in — before the system is placed on the market or put into service (Article 14(3)).\n\n**The risk management system (the lifecycle instrument)**\n\n- A risk management system shall be established, implemented, documented and maintained in relation to high-risk AI systems — Article 9(1).\n- It is a continuous iterative process planned and run throughout the entire lifecycle of the system, requiring regular systematic review and updating — Article 9(2).\n- Its steps are: identification and analysis of known and reasonably foreseeable risks to health, safety or fundamental rights under intended purpose; estimation and evaluation of risks under intended purpose and reasonably foreseeable misuse; evaluation of other risks based on data gathered from the post-market monitoring system; and adoption of appropriate and targeted risk management measures — Article 9(2)(a)–(d).\n- The post-market monitoring system feeding point (c) is the one referred to in Article 72; that Article is not among the excerpts supplied to me, so I cannot describe what it requires — Article 9(2)(c).\n- Where the provider is subject to internal risk management requirements under other Union law, these aspects may be part of, or combined with, those procedures — Article 9(10).\n- Compliance with the requirements of this Section is to be ensured taking into account the intended purpose and the generally acknowledged state of the art, with the Article 9 risk management system taken into account — Article 8(1).\n\n**Human oversight measures**\n\n- Human oversight shall aim to prevent or minimise risks to health, safety or fundamental rights emerging under intended purpose or reasonably foreseeable misuse, in particular where such risks persist despite the other requirements of this Section — Article 14(2).\n- The measures shall be commensurate with the risks, level of autonomy and context of use — Article 14(3).\n- They are ensured through measures built into the system by the provider before placing on the market or putting into service, where technically feasible, and/or measures identified by the provider before that point that are appropriate to be implemented by the deployer — Article 14(3)(a) and (b).\n- The system must be provided to the deployer so that the assigned natural persons can understand its capacities and limitations and monitor operation, including detecting anomalies, dysfunctions and unexpected performance; remain aware of automation bias; correctly interpret the output; decide not to use, disregard, override or reverse the output; and intervene or interrupt the system through a 'stop' button or similar procedure bringing it to a halt in a safe state — Article 14(4)(a)–(e).\n\n**Supporting elements in the excerpts**\n\n- Operation must be sufficiently transparent to enable deployers to interpret the output and use it appropriately, with the type and degree of transparency appropriate to the provider's and deployer's obligations in Section 3 — Article 13(1). Section 3 itself is not in my indexed text.\n- For high-risk AI systems referred to in point 1(a) of Annex III, logging shall record at a minimum the period of each use, the reference database checked against, the input data leading to a match, and the identification of the natural persons involved in verification of results as referred to in Article 14(5) — Article 12(3)(a)–(d). I have not been supplied Annex IV or the content of Annex III, nor the full text of Article 14(1) and 14(5), so I cannot set out what they contain.\n\n**Two limits on this answer.** The excerpts tie the phrase \"throughout the entire lifecycle\" specifically to the risk management system (Article 9(2)); the human oversight provisions supplied here frame the provider's duty as arising *before* placing on the market or putting into service (Article 14(3)). I have not been given Section 3, which the text indicates contains the operational obligations of providers and deployers (Article 13(1)), nor Article 72.\n\n**Human decision.** Which oversight measures are \"commensurate\", \"technically feasible\" or \"appropriate and proportionate\" in a given case is a determination for the provider, resting on the intended purpose, level of autonomy and context of use that I do not have (Articles 14(3) and 14(4)); verification of that determination sits with the notified body or the national competent authority, not with me.",
+    "Input_Tokens": 3905,
+    "Output_Tokens": 2280,
+    "Stop_Reason": "end_turn",
+    "Time": 27.409054040908813
+  },
+  {
+    "Question_ID": "B3",
+    "Question_Text": "What additional risk arises in a system that continues to learn after being placed on the market, and which articles apply?",
+    "Chunk_ID": [
+      [
+        "9(2)",
+        0.704759418964386
+      ],
+      [
+        "9(1)",
+        0.6920537948608398
+      ],
+      [
+        "9(3)",
+        0.6790675520896912
+      ],
+      [
+        "15(4)",
+        0.6767464280128479
+      ],
+      [
+        "9(5)",
+        0.6734868884086609
+      ],
+      [
+        "9(9)",
+        0.6618560552597046
+      ],
+      [
+        "14(4)",
+        0.6564607620239258
+      ],
+      [
+        "12(2)",
+        0.6552185416221619
+      ],
+      [
+        "8(1)",
+        0.6536690592765808
+      ],
+      [
+        "9(10)",
+        0.6525567770004272
+      ]
+    ],
+    "Answer_Text": "**Direct answer.** The excerpts identify one risk specific to post-market learning: **feedback loops** — possibly biased outputs influencing the input for future operations of the system (Article 15(4)). The provisions bearing on it in the indexed text are Article 15(4), together with Article 9 (risk management across the lifecycle) and Article 12(2) (logging).\n\n**What the text establishes**\n\n- High-risk AI systems that continue to learn after being placed on the market or put into service shall be developed in such a way as to eliminate or reduce as far as possible the risk of possibly biased outputs influencing input for future operations (feedback loops), and to ensure that any such feedback loops are duly addressed with appropriate mitigation measures — Article 15(4).\n- The same paragraph requires resilience regarding errors, faults or inconsistencies occurring within the system or its operating environment, in particular due to interaction with natural persons or other systems, through technical and organisational measures; robustness may be achieved through technical redundancy solutions, which may include backup or fail-safe plans — Article 15(4).\n- The risk management system is a continuous iterative process planned and run throughout the entire lifecycle of the system, requiring regular systematic review and updating — Article 9(2).\n- It must include evaluation of other risks possibly arising, based on the analysis of data gathered from the post-market monitoring system referred to in Article 72 — Article 9(2)(c). (The content of Article 72 is outside the indexed excerpts.)\n- Logging capabilities shall enable the recording of events relevant for identifying situations that may result in the system presenting a risk within the meaning of Article 79(1) or in a substantial modification, and for facilitating post-market monitoring — Article 12(2)(a) and (b). (Articles 79(1) and 72 themselves are not in the indexed text.)\n- Risk management measures must be such that the relevant residual risk per hazard and the overall residual risk are judged acceptable, with elimination or reduction through design and development in as far as technically feasible, and mitigation and control measures where risks cannot be eliminated — Article 9(5), points (a) and (b).\n- Compliance with the Section's requirements is to be ensured taking into account the intended purpose and the generally acknowledged state of the art on AI and AI-related technologies — Article 8(1).\n- Providers shall consider whether, in view of the intended purpose, the system is likely to have an adverse impact on persons under 18 and, as appropriate, other vulnerable groups — Article 9(9).\n\n**Two limits on the above.** The excerpts do not define \"substantial modification\" or set out its consequences; Article 12(2)(a) only refers to it. And the risks addressed under Article 9 are confined to those which may be reasonably mitigated or eliminated through development or design of the system, or through the provision of adequate technical information — Article 9(3).\n\n**Human decision.** Which mitigation measures are adequate for a given continuously-learning system, and whether the residual risk is acceptable, is a judgement the provider must make and document (Articles 9(1), 9(5)); it depends on the intended purpose and deployment context, which are not before me. Verification of that judgement sits with the notified body or the national competent authority, not with me.",
+    "Input_Tokens": 4011,
+    "Output_Tokens": 1577,
+    "Stop_Reason": "end_turn",
+    "Time": 17.67343497276306
+  },
+  {
+    "Question_ID": "C1",
+    "Question_Text": "Is our recruitment system compliant with the AI Act?",
+    "Chunk_ID": [
+      [
+        "8(2)",
+        0.7376949787139893
+      ],
+      [
+        "14(5)",
+        0.7251147031784058
+      ],
+      [
+        "11(1)",
+        0.7114086151123047
+      ],
+      [
+        "8(1)",
+        0.700080156326294
+      ],
+      [
+        "13(1)",
+        0.69697105884552
+      ],
+      [
+        "10(2)",
+        0.6940662860870361
+      ],
+      [
+        "10(3)",
+        0.6833544969558716
+      ],
+      [
+        "14(4)",
+        0.6796809434890747
+      ],
+      [
+        "13(2)",
+        0.6788778901100159
+      ],
+      [
+        "9(8)",
+        0.6778284907341003
+      ]
+    ],
+    "Answer_Text": "I can't tell you whether your recruitment system is compliant. A compliance verdict is not something I issue — the obligation to ensure compliance rests with the provider, and its verification with notified bodies and national competent authorities. What I can do is set out what the indexed text (Articles 8–15) requires of a high-risk AI system, so you can assess your system against it.\n\n**What the indexed text establishes**\n\n- High-risk AI systems shall comply with the requirements laid down in this Section, taking into account their intended purpose as well as the generally acknowledged state of the art on AI and AI-related technologies, and the risk management system referred to in Article 9 shall be taken into account when ensuring that compliance — Article 8(1).\n- Where a product contains an AI system to which both this Regulation and Union harmonisation legislation listed in Section A of Annex I apply, the provider is responsible for ensuring the product is fully compliant with all applicable requirements under that legislation, and may integrate the necessary testing, reporting, information and documentation into existing documentation and procedures — Article 8(2).\n- Testing shall be performed, as appropriate, at any time throughout development and, in any event, prior to placing on the market or putting into service, carried out against prior defined metrics and probabilistic thresholds appropriate to the intended purpose — Article 9(8).\n- Training, validation and testing data sets shall be subject to data governance and management practices appropriate for the intended purpose, covering in particular design choices, data collection and origin, data preparation, assumptions, availability and suitability of data sets, examination for possible biases likely to affect health and safety, negatively impact fundamental rights or lead to prohibited discrimination, measures to detect, prevent and mitigate those biases, and identification of data gaps or shortcomings — Article 10(2).\n- Those data sets shall be relevant, sufficiently representative, and to the best extent possible free of errors and complete in view of the intended purpose, with appropriate statistical properties including, where applicable, as regards the persons or groups of persons in relation to whom the system is intended to be used — Article 10(3).\n- Technical documentation shall be drawn up before the system is placed on the market or put into service and kept up to date, in a form that demonstrates compliance with this Section and enables national competent authorities and notified bodies to assess it; it shall contain at a minimum the elements set out in Annex IV (the content of Annex IV is outside the text supplied to me) — Article 11(1).\n- The system shall be designed and developed so that its operation is sufficiently transparent to enable deployers to interpret its output and use it appropriately — Article 13(1).\n- It shall be accompanied by instructions for use in an appropriate digital format or otherwise, containing concise, complete, correct and clear information that is relevant, accessible and comprehensible to deployers — Article 13(2).\n- The system shall be provided to the deployer so that the natural persons assigned human oversight are enabled, as appropriate and proportionate, to understand its capacities and limitations and monitor its operation, to remain aware of automation bias, to correctly interpret its output, to decide not to use it or to disregard, override or reverse its output, and to intervene or interrupt it via a 'stop' button or similar procedure bringing the system to a halt in a safe state — Article 14(4).\n- A further requirement — separate verification and confirmation of an identification by at least two natural persons with the necessary competence, training and authority — applies specifically to high-risk AI systems referred to in point 1(a) of Annex III, with an exception for law enforcement, migration, border control or asylum uses where Union or national law considers it disproportionate — Article 14(5). I have not been supplied with Annex III and cannot tell you what falls under point 1(a).\n\n**What a human must establish first**\n\nWhether these obligations apply to your recruitment system at all depends on facts I do not have: its intended purpose, whether it qualifies as a high-risk AI system under the classification rules (which sit outside Articles 8–15 and outside my indexed scope), and whether it is embedded in a product covered by Section A of Annex I — Article 8(1), Article 8(2). The provider bears the obligation to ensure compliance; assessment against these requirements is for national competent authorities and notified bodies — Article 11(1). Conformity assessment procedures themselves are regulated elsewhere in the Regulation and are not in my indexed text. For anything turning on employment or data protection law, consult qualified legal counsel.",
+    "Input_Tokens": 4300,
+    "Output_Tokens": 1770,
+    "Stop_Reason": "end_turn",
+    "Time": 20.786865234375
+  },
+  {
+    "Question_ID": "C2",
+    "Question_Text": "May we assess a candidate's criminal record in recruitment?",
+    "Chunk_ID": [
+      [
+        "10(2)",
+        0.6138759255409241
+      ],
+      [
+        "12(3)",
+        0.5847123265266418
+      ],
+      [
+        "10(5)",
+        0.5801876783370972
+      ],
+      [
+        "10(3)",
+        0.5699873566627502
+      ],
+      [
+        "14(5)",
+        0.5634447336196899
+      ],
+      [
+        "13(3)",
+        0.5482264757156372
+      ],
+      [
+        "11(1)",
+        0.5421799421310425
+      ],
+      [
+        "9(8)",
+        0.5297005772590637
+      ],
+      [
+        "12(2)",
+        0.5267344117164612
+      ],
+      [
+        "9(10)",
+        0.5103966593742371
+      ]
+    ],
+    "Answer_Text": "**I can't answer this one.** Whether you may lawfully assess a candidate's criminal record in recruitment is a question of employment law and of the law governing personal data — neither is governed by Chapter III, Section 2 of the AI Act, and the excerpts I hold (Articles 9–14) do not address it. It is also a lawfulness verdict, which is not mine to give.\n\n**What the indexed text does establish**, if the assessment is carried out by a high-risk AI system:\n\n- Training, validation and testing data sets must be subject to data governance and management practices appropriate to the intended purpose, covering data collection processes and the origin of the data and, in the case of personal data, the original purpose of the data collection (Article 10(2), (2)(b)).\n- Those practices must include examination in view of possible biases likely to affect health and safety, to have a negative impact on fundamental rights, or to lead to discrimination prohibited under Union law (Article 10(2)(f)), together with appropriate measures to detect, prevent and mitigate any biases identified (Article 10(2)(g)).\n- Data sets must be relevant, sufficiently representative and, to the best extent possible, free of errors and complete in view of the intended purpose, with appropriate statistical properties as regards the persons or groups of persons in relation to whom the system is intended to be used (Article 10(3)).\n- Processing of special categories of personal data by the provider is permitted only exceptionally, only to the extent strictly necessary for bias detection and correction under Article 10(2)(f) and (g), subject to appropriate safeguards and to all six cumulative conditions in points (a) to (f) — including that the objective cannot be achieved with other, synthetic or anonymised data, that access is strictly controlled and documented, that the data are not transmitted to or accessed by other parties, and that they are deleted once the bias is corrected or the retention period ends (Article 10(5)).\n- Article 10(5) states that these conditions apply *in addition to* the provisions of Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680; those instruments are outside my indexed text, so I cannot describe what they require (Article 10(5)).\n- The instructions for use must state the system's intended purpose, its limitations of performance, any known or foreseeable circumstance that may lead to risks to health, safety or fundamental rights, and, when appropriate, its performance regarding specific persons or groups of persons on which it is intended to be used (Article 13(3)(b)(i), (iii), (v)).\n\n**What remains a human decision.** The lawfulness of using criminal-record data about candidates is for qualified legal counsel under employment and data protection law, not under Articles 8–15. Within this Regulation, the obligations fall on the provider, with verification by the notified body and the national competent authorities. Before the AI Act obligations above can be applied, a human needs to establish the intended purpose of the system, whether it qualifies as a high-risk AI system under the relevant Annex III category (Annex III is not in my indexed text), and whether the data concerned are special categories of personal data.",
+    "Input_Tokens": 5057,
+    "Output_Tokens": 1563,
+    "Stop_Reason": "end_turn",
+    "Time": 20.527857780456543
+  },
+  {
+    "Question_ID": "C3",
+    "Question_Text": "How is the CE marking obtained for high-risk AI systems?",
+    "Chunk_ID": [
+      [
+        "9(8)",
+        0.7726438641548157
+      ],
+      [
+        "15(5)",
+        0.7653335332870483
+      ],
+      [
+        "15(1)",
+        0.7628801465034485
+      ],
+      [
+        "9(6)",
+        0.7625882625579834
+      ],
+      [
+        "15(4)",
+        0.7514762878417969
+      ],
+      [
+        "13(3)",
+        0.7463289499282837
+      ],
+      [
+        "11(1)",
+        0.7452118396759033
+      ],
+      [
+        "14(4)",
+        0.7355473041534424
+      ],
+      [
+        "13(2)",
+        0.7352233529090881
+      ],
+      [
+        "13(1)",
+        0.7345622181892395
+      ]
+    ],
+    "Answer_Text": "**I cannot answer this: CE marking and the conformity assessment procedure are not part of my indexed scope.** My indexed text is Chapter III, Section 2 (Articles 8–15), which lays down the *requirements* for high-risk AI systems, not the procedure by which conformity is assessed or marking is affixed. Those are governed elsewhere in the Regulation, and I will not guess which provisions apply.\n\nWhat the supplied excerpts do establish that touches on this area:\n\n- The technical documentation of a high-risk AI system shall be drawn up **before** the system is placed on the market or put into service, and kept up to date — Article 11(1).\n- That documentation shall be drawn up so as to demonstrate that the system complies with the requirements of this Section, and to give national competent authorities and notified bodies the necessary information, in a clear and comprehensive form, to assess that compliance — Article 11(1).\n- It shall contain at a minimum the elements set out in Annex IV; that Annex is referenced but its content is not in my indexed text, so I cannot describe it — Article 11(1).\n- SMEs, including start-ups, may provide the Annex IV elements in a simplified manner using a form to be established by the Commission, and **notified bodies shall accept that form for the purposes of the conformity assessment** — Article 11(1).\n- The instructions for use shall state the changes to the system and its performance that were pre-determined by the provider **at the moment of the initial conformity assessment**, if any — Article 13(3)(c).\n- Testing shall be performed at any time throughout development and, in any event, **prior to the system being placed on the market or put into service**, against prior defined metrics and probabilistic thresholds appropriate to the intended purpose — Article 9(8); testing shall also ensure the system complies with the requirements set out in this Section — Article 9(6).\n\n**Human decision:** the provider bears the obligation to prepare the technical documentation and to demonstrate compliance (Article 11(1)); verification sits with the notified body and the national competent authorities (Article 11(1)). For the applicable conformity assessment route and the rules on affixing the CE marking, consult the provisions of the Regulation outside Articles 8–15 and qualified legal counsel. Which route applies will depend on facts I do not have — in particular the system's intended purpose and the basis on which it is classified as high-risk.",
+    "Input_Tokens": 4574,
+    "Output_Tokens": 1036,
+    "Stop_Reason": "end_turn",
+    "Time": 12.922399044036865
+  },
+  {
+    "Question_ID": "C4",
+    "Question_Text": "What is the minimum accuracy percentage that must be achieved?",
+    "Chunk_ID": [
+      [
+        "10(3)",
+        0.6715396642684937
+      ],
+      [
+        "15(2)",
+        0.6688225865364075
+      ],
+      [
+        "15(3)",
+        0.6500799655914307
+      ],
+      [
+        "12(3)",
+        0.6420450806617737
+      ],
+      [
+        "11(1)",
+        0.6379037499427795
+      ],
+      [
+        "14(5)",
+        0.6295517683029175
+      ],
+      [
+        "13(3)",
+        0.6268566846847534
+      ],
+      [
+        "9(8)",
+        0.6218410730361938
+      ],
+      [
+        "10(2)",
+        0.6192750334739685
+      ],
+      [
+        "9(5)",
+        0.6076555252075195
+      ]
+    ],
+    "Answer_Text": "**The indexed text does not lay down any minimum accuracy percentage.** No numeric threshold appears in Articles 8–15; instead, the required level of accuracy is tied to the individual system and must be declared, not met against a fixed figure.\n\nWhat the text does establish:\n\n- The levels of accuracy and the relevant accuracy metrics of a high-risk AI system shall be declared in the accompanying instructions for use — the Regulation requires declaration of the level, not conformity to a set percentage — Article 15(3).\n- Article 15(2) refers to \"the appropriate levels of accuracy and robustness set out in paragraph 1\", and tasks the Commission with encouraging, in cooperation with stakeholders and organisations such as metrology and benchmarking authorities, the development of benchmarks and measurement methodologies to address how those levels are measured — Article 15(2). (Paragraph 1 itself was not among the excerpts supplied to me.)\n- The instructions for use must state the level of accuracy, including its metrics, robustness and cybersecurity against which the system has been tested and validated and which can be expected, together with any known and foreseeable circumstances that may impact that expected level — Article 13(3)(b)(ii).\n- Where appropriate, the instructions must also state performance regarding the specific persons or groups of persons on which the system is intended to be used — Article 13(3)(b)(v).\n- Testing shall be carried out against **prior defined metrics and probabilistic thresholds that are appropriate to the intended purpose** of the system, and must take place prior to placing on the market or putting into service — Article 9(8). The thresholds are therefore set per system by reference to intended purpose, not prescribed in this Section.\n- Residual risk for each hazard and overall residual risk must be judged acceptable, with risks eliminated or reduced as far as technically feasible through design and development — Article 9(5).\n\n**Human decision:** the provider must define the appropriate metrics and probabilistic thresholds for the specific system, which depends on facts not before me — the intended purpose, the persons or groups the system is used on, and the deployment context (Article 9(8), Article 10(3)). Whether the chosen levels are adequate is assessed by the provider and verified by the notified body or the national competent authority, not by me.",
+    "Input_Tokens": 4696,
+    "Output_Tokens": 927,
+    "Stop_Reason": "end_turn",
+    "Time": 12.835151195526123
+  }
+]
