@@ -1,0 +1,34 @@
+# sırlar
+.env
+
+# git
+.git/
+.gitignore
+
+# notebook and MacOS
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.DS_Store
+**/.DS_Store
+
+# python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# veri hazırlama - chunks.json
+corpus/
+corpus.ipynb
+
+# EVAL
+runs*.json
+EVAL_SET.md
+
+# Documentation
+README.md
+DECISIONS.md
+LICENSE
+
+# Dockers own
+Dockerfile
+.dockerignore
